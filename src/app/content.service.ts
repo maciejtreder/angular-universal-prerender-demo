@@ -11,6 +11,6 @@ export class ContentService {
   constructor(private http: HttpClient) { }
 
   public getRealizations(): Observable<Realization[]> {
-      return this.http.get<Realization[]>('/assets/realizations.json');
+      return this.http.get<Realization[]>('/angular-universal-prerender-demo/assets/realizations.json');
   }
 }
